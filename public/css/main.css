@@ -11,13 +11,27 @@
     border-radius: 30px;
 }
 
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.img-fluid {
+    max-height: 100px;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
 .tweet-element {
     border-radius: 0px;
-    border-top: 0px;
+    font-size: 14px;
+    border: 0px;
+    border-top: 1px solid #ddd;
 }
 
 .tweet-element:first-child {
-    border-top: 1px solid #ddd;
+    border-top: 0px;
 }
 
 .b {
@@ -26,4 +40,8 @@
 
 .b1 {
     border: 1px solid green;
+}
+
+.rond {
+    border-radius: 30%;
 }

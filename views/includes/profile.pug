@@ -1,1 +1,18 @@
-div(class="profile-container mx-3 b") Profil
+script(src="/javascripts/profile.js")
+div(class="profile-container bg-white me-3 d-flex flex-column")
+    form(class="d-flex flex-row justify-content-center align-items-center" action="/users/update/image" method="post" enctype="multipart/form-data" id="form-profile")
+        input(type="file" name="avatar" class="d-none" id="input-profile")
+        img(src=currentUser.avatar class="img-fluid rond my-2" id="image-profile")
+    div(class="d-flex flex-row justify-content-center align-items-center my-3")
+        p= `${ currentUser.username } (${ currentUser.local.email })`
+    div(class="text-center d-flex flex-row justify-content-center align-items-center my-3")
+        div(class="flex-fill")
+            p
+                strong Tweet
+                br
+                span(class="text-primary")= tweets && tweets.length ? tweets.length : "-"
+        div(class="flex-fill")
+            p
+                strong Following
+                br
+                span(class="text-primary") -

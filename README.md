@@ -1,2 +1,2 @@
 # ExpressTutorial
-Tutoriel du framework Express
+Projet de création de Tweet, d'authentification d'utilisateurs
